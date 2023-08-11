@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Nota Pengiriman</title>
+</head>
+<body>
+  <div class="container">
+    <img class="logo-top-center" src="image/kurawa logo b.png" alt="Logo">
+    <h1>Nota Pengiriman</h1>
+    <form id="deliveryForm">
+      <!-- Input Pengirim -->
+      <h2>Pengirim</h2>
+      <div class="form-group">
+        <label for="namaPengirim">Nama:</label>
+        <input type="text" id="namaPengirim" name="namaPengirim" required>
+      </div>
+      <div class="form-group">
+        <label for="alamatPengirim">Alamat:</label>
+        <textarea class="alamat" id="alamatPengirim" name="alamatPengirim" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="kontakPengirim">Kontak:</label>
+        <input type="tel" id="kontakPengirim" name="kontakPengirim" pattern="[0-9]{10,12}" required>
+      </div>
+      
+      <!-- Input Penerima -->
+      <h2>Penerima</h2>
+      <div class="form-group">
+        <label for="namaPenerima">Nama:</label>
+        <input type="text" id="namaPenerima" name="namaPenerima" required>
+      </div>
+      <div class="form-group">
+        <label for="alamatPenerima">Alamat:</label>
+        <textarea class="alamat" id="alamatPenerima" name="alamatPenerima" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="kontakPenerima">Kontak:</label>
+        <input type="tel" id="kontakPenerima" name="kontakPenerima" pattern="[0-9]{10,12}" required>
+      </div>
+      
+      <button type="submit">Buat Nota Pengiriman</button>
+    </form>
+    <div id="notaCard" class="card">
+      <img class="logo-top-right" src="image/kurawa logo b.png" alt="Logo">
+      <h2 class="nota">Nota Pengiriman</h2>
+      <table>
+        <tr>
+          <td>Pengirim:</td>
+          <td><span id="cardNamaPengirim"></span></td>
+        </tr>
+        <tr>
+          <td>Alamat Pengirim:</td>
+          <td><span id="cardAlamatPengirim"></span></td>
+        </tr>
+        <tr>
+          <td>Kontak Pengirim:</td>
+          <td><span id="cardKontakPengirim"></span></td>
+        </tr>
+        <tr>
+          <td>Penerima:</td>
+          <td><span id="cardNamaPenerima"></span></td>
+        </tr>
+        <tr>
+          <td>Alamat Penerima:</td>
+          <td><span id="cardAlamatPenerima"></span></td>
+        </tr>
+        <tr>
+          <td>Kontak Penerima:</td>
+          <td><span id="cardKontakPenerima"></span></td>
+        </tr>
+      </table>
+    </div>
+    <button id="downloadButton" style="display: none">Download Nota</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

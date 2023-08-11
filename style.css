@@ -1,0 +1,165 @@
+/* Reset margin dan padding default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h1{
+  text-align: center;
+}
+
+/* Container styling */
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo-top-center {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* ... CSS sebelumnya ... */
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Button styling */
+button[type="submit"],
+button#downloadButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Card styling */
+.card {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  position: relative;
+}
+
+.card img.logo2 {
+  max-width: 80px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card h2.nota {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.card table td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Hover effect */
+#downloadButton:hover {
+  background-color: #218838;
+}
+
+.logo-top-right {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button[type="submit"],
+  button#downloadButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .logo-top-center {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card img.logo2 {
+    max-width: 60px;
+  }
+
+  .card h2.nota {
+    font-size: 18px;
+  }
+
+  .card table td {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
